@@ -1,4 +1,4 @@
-class Character {
+export default class Character {
     constructor(name, type) {
       if (typeof name !== 'string' || name.length < 2 || name.length > 10) {
         throw new Error('Name should be a string with length >1 and <11');
@@ -17,6 +17,3 @@ class Character {
       this.defence = 0;
     }
   }
-  
-  export default Character;
-  
