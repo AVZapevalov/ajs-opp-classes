@@ -22,12 +22,12 @@ describe('Character', () => {
     expect(() => new Character('Alice', 'Witch')).toThrowError('Invalid character type');
   });
 
-  test('should throw an error for name with length >10', () => {
+  test('throw an error for name with length >10', () => {
     const longName = 'SwordsmanSwordsmanSwordsman';
     expect(() => new Character(longName, 'Swordsman')).toThrowError(`Name should be a string with length >1 and <11`);
   });
 
-  test('should throw an error for name with length <2', () => {
+  test('throw an error for name with length <2', () => {
     const shortName = 'A';
     expect(() => new Character(shortName, 'Undead')).toThrowError(`Name should be a string with length >1 and <11`);
   });
